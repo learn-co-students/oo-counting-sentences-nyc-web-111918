@@ -16,9 +16,10 @@ class String
 
   def count_sentences
     #think about how to split the sentence.
-    sent_split = self.split(/\.|\?|\!/)
-    sent_split.delete("")
-    sent_split.count
+    # sent_split = self.split(/\.|\?|\!/)
+   self.split(".").join("! ").split("! ").join("? ").split("? ").length
+    # sent_split.delete("")
+    # sent_split.count
   end
     #self.end_with?("!")
 end #end of class
