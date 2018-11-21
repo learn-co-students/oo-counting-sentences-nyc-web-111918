@@ -26,6 +26,8 @@ class String
       i[-1] == "." || i[-1] == "!" || i[-1] == "?"
     end
     string_array.length
+    #ended up using .select! to go through each array element check all three ending
+    #conditions. select! modifies original array. outside of select! I returned the array length
   end
 end
 
